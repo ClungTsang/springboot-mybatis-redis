@@ -32,7 +32,7 @@ public class DepartmentService {
      * 既调用方法，又更新缓存数据；同步更新缓存
      *  1、先调用方法
      *  2、再将目标方法的结果缓存起来
-     * @param employee
+     * @param id
      * @return
      */
     @CachePut(cacheNames = "dep",key = "#id")
