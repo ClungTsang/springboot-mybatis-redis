@@ -22,8 +22,7 @@ public class EmployeeService {
      */
     @Cacheable(cacheNames = "emp",key = "#id")
     public Employee selectById(Integer id){
-        Employee employee = employeeMapper.selectById(id);
-        return employee;
+        return employeeMapper.selectById(id);
     }
 
     /**
@@ -33,9 +32,8 @@ public class EmployeeService {
      * @param id
      * @return
      */
-    @CachePut(cacheNames = "upd",key = "#id")
+    @CachePut(cacheNames = "emp",key = "#id")
     public Employee updateById(Integer id){
-        Employee employee = employeeMapper.selectById(id);
-        return employee;
+        return  employeeMapper.selectById(id);
     }
 }

@@ -16,13 +16,13 @@ public class DepartmentController {
     DepartmentService departmentService;
 
 
-    @GetMapping("/sel/{id}")
-    public Department selectById1(@PathVariable Integer id){
+    @GetMapping("/sel")
+    public Department selectById1(@RequestParam Integer id){
         Department department = departmentService.selectById(id);
         return department;
     }
-    @GetMapping("/sel2/{id}")
-    public Department updateById(@PathVariable Integer id){
+    @GetMapping("/sel2}")
+    public Department updateById(@RequestParam Integer id){
         Department department = departmentService.updateById(id);
         return department;
     }

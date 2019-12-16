@@ -24,8 +24,7 @@ public class DepartmentService {
      */
     @Cacheable(cacheNames = "dep",key = "#id")
     public Department selectById(Integer id){
-        Department department = departmentMapper.selectById(id);
-        return department;
+        return departmentMapper.selectById(id);
     }
 
     /**
@@ -37,7 +36,6 @@ public class DepartmentService {
      */
     @CachePut(cacheNames = "dep",key = "#id")
     public Department updateById(Integer id){
-        Department department = departmentMapper.selectById(id);
-        return department;
+        return departmentMapper.selectById(id);
     }
 }

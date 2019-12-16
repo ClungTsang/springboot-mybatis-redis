@@ -13,11 +13,4 @@ public class Department implements Serializable {
     private Integer id;
     private String departmentName;
 
-    @Override
-    public String toString() {
-        return "Department{" +
-                "id=" + id +
-                ", departmentName='" + departmentName + '\'' +
-                '}';
-    }
 }

@@ -16,15 +16,4 @@ public class Employee implements Serializable {
     private Integer gender;
     private Integer dId;
 
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", gender=" + gender +
-                ", dId=" + dId +
-                '}';
-    }
 }
